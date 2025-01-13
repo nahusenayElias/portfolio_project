@@ -1,4 +1,4 @@
-// src/components/About.jsx
+
 import { motion } from 'framer-motion';
 import {
   FaCode,
@@ -7,7 +7,7 @@ import {
   FaLaptopCode
 } from 'react-icons/fa';
 
-const About = () => {
+const About = ({darkMode}) => {
   const professionalSkills = [
     "Full Stack Web Development",
     "React.js Specialist",
@@ -25,7 +25,7 @@ const About = () => {
   `;
 
   return (
-    <section id="about" className="py-16 bg-gray-100 dark:bg-gray-900">
+    <section className={`py-16 ${darkMode ? 'bg-gray-900 text-white' : 'bg-gray-100 text-gray-800'}`}>
       <div className="container mx-auto px-4">
         <motion.div
           initial={{ opacity: 0, y: 50 }}
@@ -42,7 +42,7 @@ const About = () => {
             <div className="flex justify-center">
               <div className="w-64 h-64 rounded-full overflow-hidden border-4 border-blue-600">
                 <img
-                  src="/path-to-professional-image.jpg"
+                  src="/src/assets/webdev.png"
                   alt="Professional Headshot"
                   className="w-full h-full object-cover"
                 />

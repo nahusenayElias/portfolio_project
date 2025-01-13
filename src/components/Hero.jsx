@@ -81,7 +81,7 @@ const Hero = () => {
         >
           <div className="w-80 h-80 rounded-full overflow-hidden border-4 border-blue-600">
             <img
-              src="/path-to-your-image.jpg"
+              src="/src/assets/IMG_6077.PNG"
               alt="Profile"
               className="w-full h-full object-cover"
             />
