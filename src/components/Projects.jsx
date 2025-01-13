@@ -6,20 +6,26 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 
 const projectsData = [
   {
-    title: "E-commerce Platform",
-    description: "A full-stack e-commerce solution with React, Node.js, and MongoDB.",
-    image: "/path-to-project-image-1.jpg",
-    technologies: ["React", "Node.js", "MongoDB", "Express"],
-    githubLink: "https://github.com/yourusername/project1",
-    liveLink: "https://project1-demo.com"
+    title: "Online store redux project",
+    description: "A full-stack e-commerce solution with React, Redux, Bootstrap",
+    image: "./assets/redux_screenshot.png",
+    technologies: ["React", "Redux", "Bootstrap"],
+    githubLink: "https://github.com/nahusenayElias/online-store-redux-app",
   },
   {
-    title: "Weather Dashboard",
-    description: "Real-time weather app using OpenWeatherMap API and React.",
+    title: "Countries App",
+    description: "Countries app using OpenWeatherMap API, flag, currencies, and news.",
     image: "/path-to-project-image-2.jpg",
     technologies: ["React", "API Integration", "CSS3"],
-    githubLink: "https://github.com/yourusername/project2",
+    githubLink: "https://github.com/nahusenayElias/Countries_API",
     liveLink: "https://project2-demo.com"
+  },
+  {
+    title: "Drupal 10: Modules and Themes",
+    description: "Modules and Themes of Drupal.",
+    image: "/path-to-project-image-2.jpg",
+    technologies: ["Drupal"],
+    githubLink: "https://github.com/nahusenayElias/drupal-10-App",
   },
   // Add more projects as needed
 ];
