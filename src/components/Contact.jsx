@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { FaEnvelope, FaPhone, FaMapMarkerAlt } from 'react-icons/fa';
 
-const Contact = () => {
+const Contact = ({darkMode}) => {
   const [formData, setFormData] = useState({
     name: '',
     email: '',
@@ -22,7 +22,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="py-16 bg-white dark:bg-gray-800">
+    <section  className={`py-16 ${darkMode ? 'bg-gray-900 text-white' : 'bg-gray-100 text-gray-800'}`}>
       <div className="container mx-auto px-4">
         <h2 className="text-4xl font-bold text-center mb-12">Contact Me</h2>
         <div className="grid md:grid-cols-2 gap-8">
