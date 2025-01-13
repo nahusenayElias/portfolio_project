@@ -13,11 +13,13 @@ const SkillItem = ({ icon, name, level }) => (
   </motion.div>
 );
 
-const Skills = () => {
+const Skills = ({darkMode}) => {
   return (
-    <section id="skills" className="py-20 bg-white dark:bg-gray-800">
+    <section className={`py-16 ${darkMode ? 'bg-gray-900 text-white' : 'bg-gray-100 text-gray-800'}`}>
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center mb-12 text-gray-800 dark:text-white">
+        <h2
+        className={` text-4xl font-bold text-center ${darkMode ? 'text-gray-300' : 'text-gray-600'}`}
+        >
           My Skills
         </h2>
         <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
